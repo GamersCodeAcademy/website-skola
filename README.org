@@ -1,0 +1,44 @@
+#+title website
+
+* Description
+This is going to be an example/portfolio website thats also useful.
+
+All the projects I'll do will be listed on this website, it'll have a login system with permissions and so, so that only the ones with right perms(permissions) can do certain things. 
+
+* Why do some of those things
+Anyone sould not have access to just create a project on this website, cause thats a security risk, especially cause if there is code where it could run code on a computer it would be very dangerous.
+
+For example if you have an object: {name: "name of project", desc: "description of project"} and you do an element.innerHTML = proj.name then that name property would execute and if that is some javascript code then it could potentionally run very malicious code that potentionally could just send a file of some sort to somewhere and with that maybe can login to your computer.
+So therefor i do not want anyone just create a project.
+
+* Plan
+Begginning with the welcome page, and then make it possible to login and have permissions, then administration tools, then project managment
+
+* Ideas
+- Issue system
+
+* Todo
+** DONE Welcome/start page
+CLOSED: [2022-09-23 Fri 10:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-23 Fri 10:16]
+:END:
+landing page where you land on when you visit the website.
+** TODO Backend
+Where login, permissions, creation of everything, and more is happening.
+** TODO Login
+So you can login on the website.
+** TODO Permissions
+All the permissions a user can have.
+** TODO Create account
+Creating user accounts.
+** TODO Administration page
+Here the admins can administrate everything.
+** TODO Project creation
+This is so that users can create projects.
+** TODO Project editation
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-23 Fri 10:16]
+:END:
+This is here cause if you wanna edit something.
+
