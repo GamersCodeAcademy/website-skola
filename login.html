@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/global.css">
 
-    <script src="js/login.js" defer></script>
+    <script type="module" src="js/login.js" defer></script>
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
@@ -17,7 +17,11 @@
       <li><a href="about.asp"><p>About</p></a></li>
     </ul>
     <div class="wrapper">
-      <p>This is the welcome screen</p>
+      <label>Username:</label>
+      <input type="text" id="username"/>
+      <label>Password:</label>
+      <input type="password" id="password"/>
+      <button id="login">Login</button>
     </div>
   </body>
 </html>
