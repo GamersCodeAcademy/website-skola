@@ -3,6 +3,7 @@ const passwordField = document.getElementById("password");
 const loginButton = document.getElementById("login");
 
 const loggedIn = () => {
+    location.href = "home.html"
     console.log("your in")
 };
 
