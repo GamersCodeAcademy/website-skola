@@ -46,3 +46,28 @@ This is so that users can create projects.
 :END:
 This is here cause if you wanna edit something.
 
+* Log
+** Week 38
+*** Wednessday 21 september
+The absolute first commit, were the repo was created
+*** Friday 23 september
+A gitignore file was created, a welcome page were you land on was created, I created this README.org file for documentation and such, some JavaScript stuff, some css and then a navigation bar.
+
+** Week 39
+*** Monday 26 september
+Now i created a [[https://github.com/GamersCodeAcademy/website-skola-backend][backend]] with some very basic code, then i initialized it as a npm package, I made an url parser so if the http client would send some wrong things it could parse it to be correct, then added a gitignore to the backend to ignore emacs' auto save files.
+*** Wednesday 28 september
+I initialized prisma, a package to communicate with a database much easier, [[https://prisma.io][prisma's website]], and insterted .env, node_modules and .log into the gitignore.
+
+Then I started using express insted of http.
+
+Then i started configuring prisma and made typescript work, then i created the prisma client.
+
+Then i added a README.org for planning the backend.
+*** Thursday 29 september
+On the frontend Fredrik Spaced out some things, created a login.html, created a login.js and edited login.html to use the login.js instead of index.js.
+*** Friday 30 september
+I added login support to the backend and frontend and I added the build directory to the gitignore.
+
+Fredrik played with some css to have it more organized.
+
