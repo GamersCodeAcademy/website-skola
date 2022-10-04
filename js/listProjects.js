@@ -23,7 +23,11 @@ const list = (data) => {
     }
 }
 
-axios.get("http://127.0.0.1:3001/projects")
+axios.get("http://127.0.0.1:3001/projects", {
+	headers: {
+	    'Authorization': 'Bearer ' + localStorage.getItem("accessToken")
+	}
+    })
     .then((res) => {
 	console.log(res);
 	list(res.data)
