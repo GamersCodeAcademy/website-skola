@@ -2,8 +2,10 @@ const usernameField = document.getElementById("username");
 const passwordField = document.getElementById("password");
 const loginButton = document.getElementById("login");
 
-const loggedIn = () => {
+const loggedIn = (data) => {
+    location.href = "home.html"
     console.log("your in")
+    localStorage.setItem("accessToken", data.accessToken)
 };
 
 const failed = () => {
@@ -16,12 +18,9 @@ const login = () => {
 	password: passwordField.value
     })
 	.then((res) => {
-	    console.log(res);
-	    if(res.data == "Success"){
-		loggedIn();
-	    }else{
-		failed();
-	    }
+	    console.log(res.data);
+	    if (res.data === "Nope") failed();
+	    else loggedIn(res.data);
 	});
 }
 
