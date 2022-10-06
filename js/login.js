@@ -6,6 +6,7 @@ const loggedIn = (data) => {
     location.href = "home.html"
     console.log("your in")
     localStorage.setItem("accessToken", data.accessToken)
+    localStorage.setItem("refreshToken", data.refreshToken)
 };
 
 const failed = () => {
