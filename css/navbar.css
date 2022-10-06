@@ -38,7 +38,7 @@ body{
 }
 
 .navBar{
-    background: #101213;
+    background: var(--navbar-background-color);
     position: fixed;
     width: 100%;
     top: 0;
