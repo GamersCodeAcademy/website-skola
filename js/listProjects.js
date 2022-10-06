@@ -23,6 +23,15 @@ const list = (data) => {
     }
 }
 
+const resetToken = () => {
+    axios.post("http://127.0.0.1:4001/token", {
+	"token": localStorage.getItem("refreshToken")
+    }).then((res) => {
+	localStorage.setItem("accessToken", res.data.accessToken)
+	create()
+    })
+}
+
 axios.get("http://127.0.0.1:3001/projects", {
 	headers: {
 	    'Authorization': 'Bearer ' + localStorage.getItem("accessToken")
@@ -31,4 +40,9 @@ axios.get("http://127.0.0.1:3001/projects", {
     .then((res) => {
 	console.log(res);
 	list(res.data)
-    });
+    })
+	.catch((err) => {
+	    if(err.response.status == 403){
+		resetToken()
+	    }
+	});
