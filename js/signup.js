@@ -8,7 +8,7 @@ const signedUp = () => {
 };
 
 const signup = () => {
-    axios.post("http://127.0.0.1:3001/signup", {
+    axios.post("http://127.0.0.1:4001/signup", {
 	username: usernameField.value,
 	email: emailField.value,
 	password: passwordField.value
