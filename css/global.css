@@ -4,12 +4,19 @@
     --navbar-button-cololr:#4CAF50;
     --navbar-font-color:#202020;
     --main-font-color: #DDDDDD;
+    --main-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     --box-background-color:#202020;
     --box-shadow-color: #505050;
     --box-border-color: #707070;
     --box-border-thickness:1px;
     --box-shadow-thickness:10px;
     --box-border-radius:2%;
+}
+
+*, *::before, *::after {
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+    
 }
 
 .box{
@@ -21,6 +28,7 @@
     box-shadow: 0 0 var(--box-shadow-thickness) var(--box-shadow-color);
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
