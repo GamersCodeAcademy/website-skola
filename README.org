@@ -71,3 +71,37 @@ I added login support to the backend and frontend and I added the build director
 
 Fredrik played with some css to have it more organized.
 
+** Week 40
+*** Monday 3 October
+So I started by logging in this file.
+
+I made a home page where users land when logged in.
+
+I created a signup file then made it work.
+
+Then I made files for creating projects and listing projects.
+
+*** Tuesday 4 October
+I made a file for signing out.
+
+And then I implemented jwt.
+
+*** Thursday 6 October
+Fredrik made some tweaks to his not working css files, to make them work.
+
+Then i started using another server for auth.
+
+I made better code for the navbar.
+
+Fredrik made some variables in theglobal css file and then made a box in the index html file.
+
+I wrote som async await code so prisma wouldn't freak out.
+
+Then I changed when the access token would expire.
+
+*** Friday 7 October
+I made the login work with the navbar.
+
+Then I wanted to switch to using react.js for the frontend.
+
+
