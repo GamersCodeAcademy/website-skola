@@ -14,6 +14,7 @@ const failed = () => {
 };
 
 const login = () => {
+    console.log("clicked")
     axios.post("http://127.0.0.1:4001/login", {
 	username: usernameField.value,
 	password: passwordField.value
@@ -24,5 +25,4 @@ const login = () => {
 	    else loggedIn(res.data);
 	});
 }
-
 loginButton.addEventListener("click", login);
