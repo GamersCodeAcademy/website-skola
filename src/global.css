@@ -26,15 +26,16 @@
     
 }
 
+#root{
+    height: 100%;
+}
 body {
     background: var(--background-color);
-  
-}
-.wrapper{
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 
-    
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

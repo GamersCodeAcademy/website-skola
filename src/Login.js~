@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+
+
+function Login(){
+    const [usernameValue, setUsernameValue] = useState('');
+    const [passwordValue, setPasswordValue] = useState('');
+
+    const handleUsernameChange = (event) => {
+	setUsernameValue(event.target.value)
+    }
+    const handlePasswordChange = (event) => {
+	setPasswordValue(event.target.value)
+    }
+    const handleLogin = () => {
+	axios.post("http://127.0.0.1:4001/login", {
+	    username: usernameField.value,
+	    password: passwordField.value
+	})
+	    .then((res) => {
+		console.log(res.data);
+		if (res.data === "Nope") () => {};
+		else () => {};
+	    });
+    }
+
+    return (
+	<input type="text" placeholder="Username" onChange={handleUsernameChange} value={usernameValue}></input>
+	<input type="password" placeholder="Password" onChange{handlePasswordChange} value={passwordValue}></input>
+	<button onClick={handleLogin} id="login"/>
+    )
+};
+
+	    export default Login;
