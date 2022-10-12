@@ -14,7 +14,12 @@ function Login(){
 	    .then((res) => {
 		console.log(res.data);
 		if (res.data === "Nope") {}
-		else console.log(passwordRef.current.value, usernameRef.current.value);
+		else {
+		    localStorage.setItem("accessToken", res.data.accessToken)
+		    localStorage.setItem("refreshToken", res.data.refreshToken)
+		    localStorage.setItem("loggedIn", "true")
+		    window.location.href = "/loggedIn"
+		};
 	    });
     }
 
