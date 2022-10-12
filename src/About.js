@@ -1,9 +1,14 @@
 import React from 'react';
 import './global.css'
+import './login.css'
 
 function About(){
     return (
-	<p>Hej</p>
+	<div className="wrapper">
+	    <div className="box">
+		<p>Hej</p>
+	    </div>
+	</div>
     )
 };
 
