@@ -104,4 +104,10 @@ I made the login work with the navbar.
 
 Then I wanted to switch to using react.js for the frontend.
 
+** Week 41
+*** Monday 10 October
+I started using react instead of plain html and javascript and css cause with react you can use components(like templates but not) and much, much more, and very easily dothings that would be so damn compicated else.
+
+*** Wednesday 12 October
+I made a logged in page where user land when logged in, and some basic styling on the wrapper, and added the box on the about page.
 
