@@ -4,7 +4,7 @@ import Landing from './Landing'
 import Login from './Login'
 import About from './About'
 import LoggedIn from './LoggedIn'
-import CreateProject from './CreateProjet'
+import CreateProject from './CreateProject'
 import './global.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
