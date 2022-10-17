@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import axios from 'axios'
 
 function CreateProject(){
     const titleRef = useRef(null);
@@ -7,7 +8,7 @@ function CreateProject(){
     const authorRef = useRef(null);
 
     const success = () => {
-        location.href = "loggedIn";
+        window.location.href = "loggedIn";
         console.log("your in");
     };
 
