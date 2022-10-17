@@ -4,6 +4,7 @@ import Landing from './Landing'
 import Login from './Login'
 import About from './About'
 import LoggedIn from './LoggedIn'
+import CreateProject from './CreateProjet'
 import './global.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/login" element={<Login/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/loggedIn" element={<LoggedIn/>}/>
+            <Route path="/createProject" element={<CreateProject/>}/>
         </Routes>
       </BrowserRouter>
   );
