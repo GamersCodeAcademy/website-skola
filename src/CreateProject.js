@@ -26,7 +26,7 @@ function CreateProject(){
     };
 
     const create = () => {
-        axios.post("http://127.0.0.1:3001/createProject", {
+        axios.post("http://127.0.0.1:3001/project/create", {
 	    title: titleRef.current.value,
 	    desc: descRef.current.value,
 	    repo: repoRef.current.value,
