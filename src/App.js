@@ -15,7 +15,7 @@ function App() {
 		pathname: "/login",
 	    });
 	}
-
+    }
     return (
 	<BrowserRouter>
             <Navbar/>
