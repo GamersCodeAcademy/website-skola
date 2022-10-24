@@ -38,14 +38,14 @@ function CreateProject(){
         })
 	    .then((res) => {
 	        console.log(res);
-	        if(res.data == "Success"){
+	        if(res.data === "Success"){
 		    success();
 	        }else{
 		    failed();
 	        }
 	    })
 	    .catch((err) => {
-	        if(err.response.status == 403){
+	        if(err.response.status === 403){
 		    resetToken();
 	        }
 	    });
