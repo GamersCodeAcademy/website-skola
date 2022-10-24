@@ -1,6 +1,5 @@
 import React from 'react';
-import './global.css'
-import './login.css'
+import '../../css/login.css'
 
 function About(){
     return (
