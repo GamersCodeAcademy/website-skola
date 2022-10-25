@@ -23,8 +23,8 @@ function App() {
 		<Route path="/" element={<Landing/>}/>
 		<Route path="/login" element={<Login/>}/>
 		<Route path="/about" element={<About/>}/>
-		<Route path="/loggedIn" element={<LoggedIn/>}/>
-		<Route path="/project/create" element={<CreateProject/>}/>
+		<Route path="/loggedIn" onEnter={requireAuth} element={<LoggedIn/>}/>
+		<Route path="/project/create" onEnter={requireAuth} element={<CreateProject/>}/>
             </Routes>
 	</BrowserRouter>
     );
