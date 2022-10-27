@@ -3,9 +3,11 @@ import React from 'react';
 function LoggedIn(){
     
     return (
-        <div className="wrapper">
-          <p>Welcome back!</p>
-          <button onClick={() => {window.location.href='project/create';}}>Create Project</button>
+	<div className="wrapper">
+	    <div className="box">
+		<p>Welcome back!</p>
+		<button onClick={() => {window.location.href='project/create';}}>Create Project</button>
+	    </div>
         </div>
     );
 }
