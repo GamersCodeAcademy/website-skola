@@ -24,10 +24,14 @@ function Login(){
     }
 
     return (
-	<div id="form">
-	    <input type="text" placeholder="Username" ref={usernameRef}></input>
-	    <input type="password" placeholder="Password" ref={passwordRef}></input>
-	    <button onClick={handleLogin} id="login">Login</button>
+	<div className="wrapper">
+	    <div className="box">
+		<div id="form">
+		    <input type="text" placeholder="Username" ref={usernameRef}></input>
+		    <input type="password" placeholder="Password" ref={passwordRef}></input>
+		    <button onClick={handleLogin} id="login">Login</button>
+		</div>
+	    </div>
 	</div>
     )
 };

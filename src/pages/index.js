@@ -2,7 +2,11 @@ import React from 'react';
 
 function Landing(){
     return (
-	<p>Hej</p>
+	<div className="wrapper">
+	    <div className="box">
+		<p>Hej</p>
+	    </div>
+	</div>
     );
 };
 
