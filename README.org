@@ -45,6 +45,10 @@ This is so that users can create projects.
 - State "DONE"       from "TODO"       [2022-09-23 Fri 10:16]
 :END:
 This is here cause if you wanna edit something.
+** TODO Shadows for inputboxes
+Style the shadows on all input boxes in all forms.
+
+It needs to be prettier.
 
 * Log
 ** Week 38
