@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import axios from 'axios'
-
+import '../../../css/createProject.css'
 function CreateProject(){
     const titleRef = useRef(null);
     const descRef = useRef(null);
@@ -52,17 +52,17 @@ function CreateProject(){
     };
 
     return (
-        <div className="wrapper">
-          <label>Title:</label>
-          <input type="text" id="title" ref={titleRef}/>
-          <label>Description:</label>
-          <input type="text" id="desc" ref={descRef}/>
-          <label>Autor:</label>
-          <input type="text" id="author" ref={authorRef}/>
-          <label>Github Repo:</label>
-          <input type="text" id="repo" ref={repoRef}/>
-          <button onClick={create}>Create</button>
-        </div>
+	<div className="wrapper">
+	    <div className="box">
+		<div id="form">
+		    <input type="text" id="title" placeholder="Title" ref={titleRef}/>
+		    <input type="text" id="desc" placeholder="Description" ref={descRef}/>
+		    <input type="text" id="author" placeholder="Author" ref={authorRef}/>
+		    <input type="text" id="repo" placeholder="Git Repository" ref={repoRef}/>
+		    <button id="create" onClick={create}>Create</button>
+		</div>
+	    </div>
+	</div>
     );
 }
 
